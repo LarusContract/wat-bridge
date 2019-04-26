@@ -124,8 +124,7 @@ _connect_signal = YowLayerEvent(YowNetworkLayer.EVENT_STATE_CONNECT)
 
 WA_STACK = (
     YowStackBuilder()
-    .pushDefaultLayers(True)
-    # .pushDefaultLayers(False)
+    .pushDefaultLayers()
     .push(wabot)
     .build()
 )
